@@ -18,8 +18,8 @@
 //
 // NYILATKOZAT
 // ---------------------------------------------------------------------------------------------
-// Nev    : Arnócz László
-// Neptun : PV8AK9
+// Nev    : yolo
+// Neptun : sweg
 // ---------------------------------------------------------------------------------------------
 // ezennel kijelentem, hogy a feladatot magam keszitettem, es ha barmilyen segitseget igenybe vettem vagy
 // mas szellemi termeket felhasznaltam, akkor a forrast es az atvett reszt kommentekben egyertelmuen jeloltem.
@@ -313,8 +313,8 @@ public:
                               0, NULL);     // stride and offset: it is tightly packed
     }
     void Draw() {
-        mat4 M(sx*cosf(angle), sy*sinf(angle), 0, 0,
-               -sinf(angle)*sx, sy*cosf(angle), 0, 0,
+        mat4 M(sx*cosf(angle), sx*sinf(angle), 0, 0,
+               -sinf(angle)*sy, sy*cosf(angle), 0, 0,
                0, 0, 0, 0,
                wTx, wTy, 0, 1); // model matrix
         
